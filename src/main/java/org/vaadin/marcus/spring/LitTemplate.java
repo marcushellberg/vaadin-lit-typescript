@@ -1,0 +1,27 @@
+package org.vaadin.marcus.spring;
+
+import com.vaadin.flow.component.Component;
+import com.vaadin.flow.component.Tag;
+import com.vaadin.flow.component.dependency.JsModule;
+
+@Tag("lit-template")
+@JsModule("./src/lit-template.ts")
+public class LitTemplate extends Component {
+
+  private String name;
+
+  public LitTemplate() {
+    getElement().addPropertyChangeListener("name", "name-changed", e -> {
+      name = getElement().getProperty("name");
+      System.out.println(name);
+    });
+  }
+
+  public void setName(String name) {
+    getElement().setProperty("name", name);
+  }
+
+  public String getName() {
+    return name;
+  }
+}
