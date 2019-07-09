@@ -1,6 +1,5 @@
 import {css, customElement, html, LitElement, property} from 'lit-element';
 import '@vaadin/vaadin-text-field';
-import '@vaadin/vaadin-button';
 
 @customElement("lit-template")
 class LitTemplate extends LitElement {
