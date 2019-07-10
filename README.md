@@ -4,7 +4,12 @@ A small demo of how you can use TypeScript and LitElement for client-side templa
 
 
 ## Requirements
+
 You need Java, Maven and Node installed.
+
+## Developing
+
+You need to run `mvn install` once before starting development to download all necessary dependencies. 
 
 ## How to run
 
