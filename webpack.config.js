@@ -5,20 +5,7 @@
 const merge = require('webpack-merge');
 const flowDefaults = require('./webpack.generated.js');
 
-module.exports = merge(flowDefaults, {
-  resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json']
-  },
-  devtool: 'inline-source-map',
-  module: {
-    rules: [{
-      // Include ts, tsx, js, and jsx files.
-      test: /\.tsx?$/,
-      exclude: /node_modules/,
-      loader: 'ts-loader',
-    }],
-  }
-});
+module.exports = merge(flowDefaults, {});
 
 /**
  * This file can be used to configure the flow plugin defaults.
